@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="org.jain.user.update.UpdateUserScreenController">
+   <children>
+      <AnchorPane prefHeight="445.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="202.0" layoutY="37.0" text="Update User Details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="95.0" text="User ID to Update Details:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="139.0" text="New User Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="186.0" text="New Password:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="230.0" text="New E-Mail:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="savebtn" layoutX="345.0" layoutY="283.0" mnemonicParsing="false" onAction="#savebtnClick" text="Save Changes">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetbtn" layoutX="232.0" layoutY="283.0" mnemonicParsing="false" onAction="#resetbtnClick" text="Reset">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="useridtxt" layoutX="300.0" layoutY="92.0" onAction="#useridtxtClick"/>
+            <TextField fx:id="usernametxt" layoutX="300.0" layoutY="136.0" />
+            <TextField fx:id="emailtxt" layoutX="300.0" layoutY="227.0" />
+            <TextField fx:id="passwordtxt" layoutX="300.0" layoutY="183.0" />
+            <Button fx:id="backbtn" layoutX="99.0" layoutY="283.0" mnemonicParsing="false" onAction="#backbtnClick" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
